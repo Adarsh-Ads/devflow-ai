@@ -14,7 +14,7 @@ def test_health_returns_200():
 def test_health_returns_expected_json():
     response = client.get("/health")
 
-    assert response.json() == {"status": "broken"}
+    assert response.json() == {"status": "ok"}
 
 
 def test_unknown_endpoint_returns_404():
